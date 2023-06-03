@@ -1,0 +1,23 @@
+.product{
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+    max-width: 100%;
+    .product-img{
+        width: 100%;
+        aspect-ratio: 4/3;
+        margin: 0 0 10px 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .price{
+        color: grey;
+    }
+}
+

@@ -1,0 +1,14 @@
+.payment-container{
+    height: calc(100vh - 80px);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .btn{
+        margin: 10px;
+    }
+    img{
+        width: 250px;
+    }
+}

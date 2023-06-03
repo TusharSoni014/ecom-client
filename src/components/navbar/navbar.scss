@@ -1,0 +1,124 @@
+@import "../../scss/color-vars.scss";
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 80px;
+  background-color: $primary;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 0;
+  align-items: center;
+  .share-sidebar {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 80px;
+    background-color: $primary;
+    height: calc(100vh - 80px);
+  }
+  .header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: white;
+    }
+    .box {
+      width: 80px;
+      height: 80px;
+      margin: 0 10px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+      img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+    h1 {
+      font-family: "Caveat", cursive;
+    }
+  }
+
+  .header-extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .categories {
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+          a {
+            position: relative;
+            margin: 0 10px;
+            color: white;
+            &::before {
+              content: "";
+              bottom: -5px;
+              position: absolute;
+              width: 0%;
+              height: 1px;
+              background-color: white;
+              transition-duration: 0.2s;
+            }
+            &:hover::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .cart {
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header-main {
+    h1 {
+      display: none;
+    }
+  }
+  .share-sidebar {
+    display: none;
+  }
+  .header-extra {
+    .categories {
+      display: none;
+    }
+  }
+  .navbar .header-extra .cart {
+    margin: 20px;
+  }
+}
+
+.cart-drawer {
+  z-index: 99999999;
+  position: relative;
+  width: 100%;
+  .cart-footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    padding: 10px;
+    height: 55px;
+    background-color: rgb(240, 240, 240);
+  }
+}
+.ant-drawer-body {
+  margin: 0 0 50px 0;
+}

@@ -1,0 +1,28 @@
+.hero{
+    background-image: url('../../assets/banner.png');
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    .heading{
+        text-align: center;
+    }
+
+    .hero-content{
+        position: relative;
+        box-shadow:0 0 20px rgba($color: #000000, $alpha: 0.2) ;
+        background-color: white;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        flex-direction: column;
+        color: white;
+        p{
+            color: lightgrey;
+        }
+        .explore-btn{
+            margin: 10px 0;
+        }
+    }
+}

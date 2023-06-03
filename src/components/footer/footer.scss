@@ -1,0 +1,64 @@
+@import '../../scss/color-vars.scss';
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    background-color: rgb(26, 0, 44);
+    color: white;
+    padding: 15px;
+    .footer-left{
+        ul{
+            display: flex;
+            margin: 5px 0;
+            li{
+                margin: 0 10px 0 0;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                transition-duration: 0.2s;
+                cursor: pointer;
+                a{
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &:hover{
+                    background-color: purple;
+
+                }
+            }
+        }
+    }
+
+    .footer-right{
+        height: 100%;
+        li{
+            margin: 5px 0;
+        }
+        a{
+            color: white;
+
+        }
+    }
+}
+
+.extra-footer{
+    background-color:black ;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    height: 80px;
+    img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .footer{
+        font-size: 12px;
+    }
+}
